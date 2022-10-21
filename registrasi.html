@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Registrasi</title>
+</head>
+
+<body background="fotoku.jpg">
+    <header>
+        <div class="brand"><a href="#">Webku</a></div>
+
+        <nav>
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="index.html">Home</a></li>
+                <li class="nav_li"><a href="jadwal.html">Jadwal</a></li>
+                <li class="nav_li"><a href="registrasi.html">Form Registrasi</a></li>
+                <li class="nav_li"><a href="biodata.html">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 align="center" style="color: #fff;">Form Registrasi</h1>
+    <br>
+    <form action="" method="POST" align="center">
+        <table align="center" bgcolor="#fff" style="padding: 30px;">
+            <tr>
+                <td align="left"><label for="nama">Nama Lengkap</label></td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td align="left"><label for="password">Password</label></td>
+                <td>:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td align="left"><label for="jk">Jenis Kelamin</label></td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jk" value="laki-laki"> Laki-laki
+                    <input type="radio" name="jk" value="perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><label for="">Hobi</label></td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="hobi_baca"> Membaca Buku
+                    <input type="checkbox" name="hobi_nulis"> Menulis
+                    <br>
+                    <input type="checkbox" name="hobi_mancing"> Memancing
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><label for="jurusan">Asal Kota</label></td>
+                <td>:</td>
+                <td>
+                    <select name="jurusan" id="jurusan">
+                        <option value="Kota Jakarta">Jakarta</option>
+                        <option value="Kota Bandung">Bandung</option>
+                        <option value="Kota Semarang">Semarang</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><label for="komentar">Komentar Anda</label></td>
+                <td>:</td>
+                <td>
+                    <textarea name="komentar" id="komentar" cols="22" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <br>
+                    <input type="submit" value="Mulai Proses!" style="margin: auto; display: flex;">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
